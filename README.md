@@ -1,10 +1,15 @@
 # CNC
 
-Short description and motivation.
+Stop milling about and build rails apps faster with CNC.
 
 ## Usage
 
-How to use my plugin.
+CNC bolsters rails with some helpful modules:
+
+- `CNC::UI` - UI builders.
+- `CNC::Model` - Model helpers.
+- `CNC::REST` - RESTful controllers.
+- `CNC::Policy` - Pundit integration.
 
 ## Installation
 
@@ -28,7 +33,7 @@ $ gem install cnc
 
 ## Contributing
 
-Contribution directions go here.
+Open a Pull Request or issue and we'll take a look.
 
 ## License
 
