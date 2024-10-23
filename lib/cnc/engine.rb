@@ -2,8 +2,8 @@ module CNC
   class Engine < ::Rails::Engine
     isolate_namespace CNC
 
-    initializer 'setup_inflections' do
-      ActiveSupport::Inflector.inflections {|inflect| inflect.acronym 'CNC' }
+    initializer "cnc.inflections" do
+      ActiveSupport::Inflector.inflections { _1.acronym "CNC" }
     end
   end
 end

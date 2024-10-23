@@ -18,5 +18,10 @@ Gem::Specification.new do |spec|
     Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
   end
 
-  spec.add_dependency "rails", ">= 7.0.4.3"
+  spec.bindir = "exe"
+  spec.executables = spec.files.grep(%r{\Aexe/}) { File.basename(_1) }
+
+  spec.add_dependency "rubocop-rails-omakase"
+  spec.add_dependency "rails"
+  spec.add_dependency "dry-cli"
 end

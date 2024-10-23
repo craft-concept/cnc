@@ -1,15 +1,6 @@
 # CNC
 
-Stop milling about and build rails apps faster with CNC.
-
-## Usage
-
-CNC bolsters rails with some helpful modules:
-
-- `CNC::UI` - UI builders.
-- `CNC::Model` - Model helpers.
-- `CNC::REST` - RESTful controllers.
-- `CNC::Policy` - Pundit integration.
+CLI and helpers for building things the Craft & Concept way.
 
 ## Installation
 

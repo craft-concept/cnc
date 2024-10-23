@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "dry/cli"
+
+require "cnc/cli/commands"
+
+Dry::CLI.new(CNC::CLI::Commands).call

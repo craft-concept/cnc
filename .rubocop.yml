@@ -1,0 +1,40 @@
+inherit_gem:
+  rubocop-rails-omakase: rubocop.yml
+
+AllCops:
+  ParserEngine: parser_prism
+  TargetRubyVersion: 3.3
+
+Layout/ArgumentAlignment:
+  EnforcedStyle: with_first_argument
+
+Layout/ClassStructure:
+  Enabled: true
+
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: keyword
+
+Layout/IndentationConsistency:
+  EnforcedStyle: normal
+  Enabled: true
+
+Layout/IndentationWidth:
+  Width: 2
+  Enabled: true
+
+Layout/SpaceInsideArrayLiteralBrackets:
+  EnforcedStyle: no_space
+
+Layout/SpaceInsideBlockBraces:
+  SpaceBeforeBlockParameters: false
+
+Layout/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: no_space
+
+Style/HashSyntax:
+  EnforcedShorthandSyntax: always
+
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: double_quotes
+  # Include: ["*"]
