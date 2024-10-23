@@ -2,7 +2,7 @@ inherit_gem:
   rubocop-rails-omakase: rubocop.yml
 
 AllCops:
-  ParserEngine: parser_prism
+  # ParserEngine: parser_prism
   TargetRubyVersion: 3.3
 
 Layout/ArgumentAlignment:
