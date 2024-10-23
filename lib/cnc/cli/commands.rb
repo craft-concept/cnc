@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require "cnc/version"
+
 module CNC
   module CLI
     module Commands
