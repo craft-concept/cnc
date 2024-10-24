@@ -37,4 +37,4 @@ Style/HashSyntax:
 Style/StringLiterals:
   Enabled: true
   EnforcedStyle: double_quotes
-  # Include: ["*"]
+  Include: ["*"]
