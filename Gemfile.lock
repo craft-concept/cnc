@@ -117,7 +117,6 @@ GEM
     parser (3.3.5.0)
       ast (~> 2.4.1)
       racc
-    pg (1.5.3)
     propshaft (0.7.0)
       actionpack (>= 7.0.0)
       activesupport (>= 7.0.0)
@@ -197,11 +196,11 @@ GEM
 
 PLATFORMS
   arm64-darwin-21
+  arm64-darwin-23
   arm64-darwin-24
 
 DEPENDENCIES
   cnc!
-  pg
   propshaft
   rubocop
 
