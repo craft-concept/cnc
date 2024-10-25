@@ -34,8 +34,14 @@ Layout/SpaceInsideBlockBraces:
 Layout/SpaceInsideHashLiteralBraces:
   EnforcedStyle: no_space
 
+Lint/AssignmentInCondition:
+  Enabled: false
+
 Minitest/TestFileName:
   Enabled: true
+
+Rails/RefuteMethods:
+  EnforcedStyle: refute
 
 Style/HashSyntax:
   EnforcedShorthandSyntax: always
