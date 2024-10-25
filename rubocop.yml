@@ -34,6 +34,9 @@ Layout/SpaceInsideBlockBraces:
 Layout/SpaceInsideHashLiteralBraces:
   EnforcedStyle: no_space
 
+Minitest/TestFileName:
+  Enabled: true
+
 Style/HashSyntax:
   EnforcedShorthandSyntax: always
 

@@ -6,3 +6,4 @@ gemspec
 
 gem "propshaft"
 gem "rubocop"
+gem "sqlite3"
