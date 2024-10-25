@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "hbenl.vscode-test-explorer-liveshare",
+    "hbenl.vscode-test-explorer",
+    "connorshea.vscode-ruby-test-adapter",
+    "shopify.ruby-extensions-pack",
+    "kaiwood.endwise",
+    "nautigsam.go-to-test"
+  ]
+}
