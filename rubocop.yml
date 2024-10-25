@@ -14,6 +14,9 @@ Layout/ClassStructure:
 Layout/EndAlignment:
   EnforcedStyleAlignWith: keyword
 
+Layout/ExtraSpacing:
+  ForceEqualSignAlignment: true
+
 Layout/IndentationConsistency:
   EnforcedStyle: normal
   Enabled: true
