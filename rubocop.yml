@@ -5,47 +5,61 @@ AllCops:
   # ParserEngine: parser_prism
   TargetRubyVersion: 3.3
 
+# wrapped invocations should line up arguments
 Layout/ArgumentAlignment:
   EnforcedStyle: with_first_argument
 
+# Ensure the proper ordering of class macros, etc.
 Layout/ClassStructure:
   Enabled: true
 
+# `end` should be aligned with the keyword that started the block
 Layout/EndAlignment:
   EnforcedStyleAlignWith: keyword
 
+# Line up adjacent assignments
 Layout/ExtraSpacing:
   ForceEqualSignAlignment: true
 
+# disabled by rubocop-rails-omakase
 Layout/IndentationConsistency:
   EnforcedStyle: normal
   Enabled: true
 
+# disabled by rubocop-rails-omakase
 Layout/IndentationWidth:
   Width: 2
   Enabled: true
 
+# No spaces inside array literals: `[1, 2]`. Matches method invocation: `foo(1, 2)`.
 Layout/SpaceInsideArrayLiteralBrackets:
   EnforcedStyle: no_space
 
+# `{|x| x }` No need for the first space
 Layout/SpaceInsideBlockBraces:
   SpaceBeforeBlockParameters: false
 
+# No spaces inside hash literals: `{a: 1}`. Matches method invocation: `foo(a: 1)`
 Layout/SpaceInsideHashLiteralBraces:
   EnforcedStyle: no_space
 
+# `if x = 1` is fine and should be used relatively often
 Lint/AssignmentInCondition:
   Enabled: false
 
+# ensure test filenames include "test"
 Minitest/TestFileName:
   Enabled: true
 
+# Prefer `refute` over `assert_not`. `assert_not_*` are rails-only.
 Rails/RefuteMethods:
   EnforcedStyle: refute
 
+# `{x:}` preferred over `x: x` or `:x => x`. Ignored for > ruby-3.3 code.
 Style/HashSyntax:
   EnforcedShorthandSyntax: always
 
+# Prefer "x" over 'x' for all files.
 Style/StringLiterals:
   Enabled: true
   EnforcedStyle: double_quotes
