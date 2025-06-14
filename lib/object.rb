@@ -1,7 +1,15 @@
 Object.class_eval do
+  def system_echo(src)
+    puts src
+    system(src)
+  end
+
   def rubymine(file, line = 0)
-    puts "rubymine --line #{line || 0} #{file} "
-    system("rubymine --line #{line || 0} #{file} ")
+    system_echo("rubymine --line #{line || 0} #{file}")
+  end
+
+  def vscode(file, line = 0)
+    system_echo("code #{file}:#{line || 0}")
   end
 
   def locate_method(name)
@@ -23,7 +31,7 @@ Object.class_eval do
 
     # return system("tmux split-window -h \"vim #{file} +#{line}\"") if file
     # return system("$VISUAL --goto #{file}:#{line || 0}") if file
-    return rubymine(file, line || 0) if file
+    return vscode(file, line || 0) if file
 
     puts 'Source not available. Is this a C extension?'
   end
