@@ -4,6 +4,8 @@ PATH
     cnc (0.1.6)
       dry-cli
       rails
+      rubocop
+      rubocop-minitest
       rubocop-rails-omakase
 
 GEM

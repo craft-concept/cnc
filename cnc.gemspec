@@ -21,6 +21,8 @@ Gem::Specification.new do |spec|
   spec.bindir      = "exe"
   spec.executables = spec.files.grep(%r{\Aexe/}) { File.basename(_1) }
 
+  spec.add_dependency "rubocop"
+  spec.add_dependency "rubocop-minitest"
   spec.add_dependency "rubocop-rails-omakase"
   spec.add_dependency "rails"
   spec.add_dependency "dry-cli"
