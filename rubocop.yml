@@ -1,6 +1,9 @@
 inherit_gem:
   rubocop-rails-omakase: rubocop.yml
 
+plugins:
+  - rubocop-minitest
+
 AllCops:
   # ParserEngine: parser_prism
   TargetRubyVersion: 3.3
