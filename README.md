@@ -22,6 +22,10 @@ Or install it yourself as:
 $ gem install cnc
 ```
 
+## Usage & Features
+
+### Migration renaming
+
 ## Contributing
 
 Open a Pull Request or issue and we'll take a look.

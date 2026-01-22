@@ -5,5 +5,6 @@ git_source(:github) {|repo| "https://github.com/#{repo}.git" }
 gemspec
 
 gem "propshaft"
+gem "puma"
 gem "rubocop"
 gem "sqlite3"

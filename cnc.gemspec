@@ -25,5 +25,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "rubocop-minitest"
   spec.add_dependency "rubocop-rails-omakase"
   spec.add_dependency "rails"
+  spec.add_dependency "listen"
   spec.add_dependency "dry-cli"
+  spec.add_dependency "zeitwerk"
 end
