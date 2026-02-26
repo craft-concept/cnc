@@ -85,7 +85,7 @@ Minitest/LifecycleHooksOrder: # new in 0.28
 Minitest/LiteralAsActualArgument: # new in 0.10
   Enabled: true
 Minitest/MultipleAssertions: # new in 0.10
-  Enabled: true
+  Enabled: false
 Minitest/NonExecutableTestMethod: # new in 0.34
   Enabled: true
 Minitest/NonPublicTestMethod: # new in 0.27

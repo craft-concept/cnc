@@ -1,10 +1,14 @@
 class Module
   # Shorthand for `const_set(name.camelize, Class.new(parent) { ... })`.
   # Useful when defining classes in macros.
-  def define_class(name, parent = nil, &)
+  def define_class(name, parent = nil, **macros, &)
     name = name.to_s.camelize
     raise NameError, "class exists: #{name}" if const_defined?(name, false)
-    const_set name, Class.new(parent, &)
+    klass = Class.new(parent) do
+      macros.each {|key, value| send(key, *value) }
+      class_eval(&)
+    end
+    const_set name, klass
   end
 
   # Defines a constant of the given name using the given block if it doesn't
