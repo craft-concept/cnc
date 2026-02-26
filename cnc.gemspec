@@ -6,8 +6,8 @@ Gem::Specification.new do |spec|
   spec.authors     = ["Jeff Peterson"]
   spec.email       = ["jeff@concept.love"]
   spec.homepage    = "https://github.com/craft-concept/cnc"
-  spec.summary     = "Rails starter kit."
-  spec.description = "Stop milling about and build rails apps faster with CNC."
+  spec.summary     = "Ruby starter kit."
+  spec.description = "Stop milling about and build ruby apps faster with CNC."
   spec.license     = "MIT"
 
   spec.metadata["homepage_uri"]    = spec.homepage
@@ -24,7 +24,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "rubocop"
   spec.add_dependency "rubocop-minitest"
   spec.add_dependency "rubocop-rails-omakase"
-  spec.add_dependency "rails"
+  spec.add_dependency "activesupport"
   spec.add_dependency "listen"
   spec.add_dependency "dry-cli"
   spec.add_dependency "zeitwerk"

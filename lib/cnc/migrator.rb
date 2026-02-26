@@ -1,6 +1,9 @@
 require "listen"
 
 module CNC
+  # Usage:
+  #
+  #   CNC::Migrator.listen if Rails.env.development?
   module Migrator
     module_function
 

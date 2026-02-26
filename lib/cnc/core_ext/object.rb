@@ -1,4 +1,8 @@
-Object.class_eval do
+class Object
+  def instance_variable_values
+    instance_variables.map { instance_variable_get _1 }
+  end
+
   def system_echo(src)
     puts src
     system(src)
