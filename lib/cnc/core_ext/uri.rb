@@ -1,14 +1,23 @@
 require "uri"
+require "rack"
 
 class URI::Generic
   def params
     Rack::Utils.parse_query(query)
   end
 
-  def <(oth)
+  # Returns true if this URI is the same or less specific than `oth` URI.
+  def <=(oth)
     oth = URI(oth)
-    oth.path.start_with?(path) && params < oth.params
+    oth.path.start_with?(path) && params <= oth.params
   end
 
-  def >(oth) = URI(oth) == self || URI(oth) < self
+  # Returns true if `oth` URI is the same or less specific than itself.
+  def >=(oth)
+    oth = URI(oth)
+    path.start_with?(oth.path) && params >= oth.params
+  end
+
+  def >(oth) = URI(oth) <= self
+  def <(oth) = URI(oth) >= self
 end
