@@ -36,6 +36,7 @@ GEM
     drb (2.2.3)
     dry-cli (1.4.1)
     ffi (1.17.3-arm64-darwin)
+    ffi (1.17.3-x86_64-linux-gnu)
     i18n (1.14.8)
       concurrent-ruby (~> 1.0)
     json (2.18.1)
@@ -116,6 +117,7 @@ PLATFORMS
   arm64-darwin-23
   arm64-darwin-24
   arm64-darwin-25
+  x86_64-linux
 
 DEPENDENCIES
   cnc!
