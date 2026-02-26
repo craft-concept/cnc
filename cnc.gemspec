@@ -20,6 +20,7 @@ Gem::Specification.new do |spec|
 
   spec.bindir      = "exe"
   spec.executables = spec.files.grep(%r{\Aexe/}) { File.basename(_1) }
+  spec.required_ruby_version = ">= 3.3"
 
   spec.add_dependency "rubocop"
   spec.add_dependency "rubocop-minitest"
