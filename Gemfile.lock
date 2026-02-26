@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    cnc (0.1.7)
+    cnc (0.1.8)
       activesupport
       listen
       rubocop
@@ -35,6 +35,7 @@ GEM
     connection_pool (3.0.2)
     drb (2.2.3)
     ffi (1.17.3-arm64-darwin)
+    ffi (1.17.3-x86_64-linux-gnu)
     i18n (1.14.8)
       concurrent-ruby (~> 1.0)
     json (2.18.1)
@@ -116,6 +117,7 @@ PLATFORMS
   arm64-darwin-23
   arm64-darwin-24
   arm64-darwin-25
+  x86_64-linux
 
 DEPENDENCIES
   cnc!
