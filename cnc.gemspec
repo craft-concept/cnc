@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
   spec.metadata["changelog_uri"]   = "https://github.com/craft-concept/cnc"
 
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
-    Dir["{app,config,db,lib,exe}/**/*", "MIT-LICENSE", "Rakefile", "README.md", "rubocop.yml"]
+    Dir["{lib,exe,templates}/**/*", "MIT-LICENSE", "Rakefile", "README.md", "rubocop.yml"]
   end
 
   spec.bindir      = "exe"

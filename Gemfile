@@ -6,3 +6,5 @@ gemspec
 
 gem "rake"
 gem "irb"
+gem "rails"
+gem "rubocop"
