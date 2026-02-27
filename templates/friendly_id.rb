@@ -5,7 +5,7 @@ $options ||= JSON.load(ENV['OPTIONS'] || '{}')
 gem "friendly_id" unless match_file("Gemfile", /friendly_id/)
 
 inject_into_class "app/models/application_record.rb", "ApplicationRecord" do
-  "  extend FriendlyId\n"
+  "  # include FriendlyId\n"
 end
 
 migration = Dir["db/migrate/*"].none?(/friendly_id/)
